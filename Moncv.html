@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Ahmed Baha Eddine LACHHEB</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      background-color: #f7f8fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    h2 {
+      color: #555;
+      font-weight: normal;
+      margin-top: 0;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      color: #004aad;
+      border-bottom: 2px solid #004aad;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #004aad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Style du bouton PDF */
+    .cv-button {
+      background-color: #004aad;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cv-button:hover {
+      background-color: #003080;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="Image CV.jpg" alt="Photo de profil" class="photo">
+    <h1>Ahmed Baha Eddine LACHHEB</h1>
+    <h2>Ingénieur en Génie Mécatronique</h2>
+    <p class="contact">
+      📞 +216 53 808 320 |
+      📧 <a href="mailto:ahmedbahaeddine.lachheb@enicar.ucar.tn">ahmedbahaeddine.lachheb@enicar.ucar.tn</a><br>
+      🌍 <a href="https://github.com/Ahmed-Lachheb" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/ahmed-baha-eddine-lachheb-447565222/" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <section>
+    <h3>Éducation</h3>
+    <p><strong>Cycle d’ingénieur en Génie Mécatronique</strong> — ENICarthage (Sept. 2022 – Juil. 2025)</p>
+    <p><strong>Licence en Génie Mécatronique</strong> — ISET Béja (Sept. 2019 – Juil. 2022)</p>
+    <p><strong>Baccalauréat en Sciences Techniques</strong> — 2019</p>
+  </section>
+
+  <section>
+    <h3>Expérience Professionnelle</h3>
+
+    <p>
+      <button class="cv-button" onclick="window.open('Attestation-I@T.pdf', '_blank')">Voir le rapport</button>
+      <strong>Stage de fin d’études | Innov-Alliance-Technologie</strong>
+      (Fév. 2025 – Juin 2025)
+    </p>
+    <ul>
+      <li>Optimisation du système de mise à jour firmware d’un servomoteur via BLE</li>
+      <li>Développement d’un script Python pour transfert via commandes AT vers ESP32</li>
+      <li>Transmission UART vers STM32G474VET6 et flashage QSPI</li>
+      <li>Réduction du temps de mise à jour de 30 à 6 minutes</li>
+    </ul>
+    <p><em>Mots-clés :</em> Python, ESP32, BLE, UART, STM32G474VET6, QSPI, IAR EWARM</p>
+
+    <p>
+      <button class="cv-button" onclick="window.open('Attestation-ST.pdf', '_blank')">Voir le rapport</button>
+      <strong>Stage d’été | STMicroelectronics</strong>
+      (Juil. 2024 – Sept. 2024)
+    </p>
+    <ul>
+      <li>Développement d’un exemple BSP d’enregistrement audio analogique pour STM32H735G-DK</li>
+      <li>Configuration des périphériques SAI et DFSDM</li>
+      <li>Ajout d’un nouvel exemple dans STM32CubeH7</li>
+    </ul>
+    <p><em>Mots-clés :</em> STM32H735G-DK, IAR EWARM, SAI, DFSDM, Audio MEMS</p>
+
+    <p>
+      <button class="cv-button" onclick="window.open('Attestation-Iset.pdf', '_blank')">Voir le rapport</button>
+      <strong>Projet de fin d’études | ISET Béja</strong>
+      (Fév. 2022 – Juin 2022)
+    </p>
+    <ul>
+      <li><strong>AGRIDRONE</strong> – Drone pour la détection d’oranges à l’aide de YOLOv5</li>
+      <li>Assemblage du drone, configuration du contrôleur et entraînement du modèle</li>
+      <li>Gestion de projet avec Jira et GitHub</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Compétences</h3>
+    <ul>
+      <li><strong>Langages :</strong> C, C++, C embarqué, Assembleur, Python</li>
+      <li><strong>Cartes :</strong> STM32, ESP32, Arduino, PIC</li>
+      <li><strong>Protocoles :</strong> UART, I2C, SPI, I2S, QSPI</li>
+      <li><strong>Outils :</strong> STM32CubeIDE, IAR EWARM, Keil µVision, CubeMX, VSCode, MPLAB</li>
+      <li><strong>IoT :</strong> MQTT, Node-RED</li>
+      <li><strong>Gestion de versions :</strong> Git, GitHub</li>
+      <li><strong>Scrum :</strong> Jira, Trello</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Projets Académiques</h3>
+
+    <p><strong>Canne intelligente pour aveugle (FreeRTOS)</strong> — Oct. 2024 - Nov. 2024</p>
+    <ul>
+      <li>Implémentation de la pile FreeRTOS sur STM32F4</li>
+      <li>Intégration de capteurs et d’alertes pour l’autonomie des utilisateurs</li>
+    </ul>
+
+    <p><strong>Ruche connectée pour apiculteur</strong> — Fév. 2024 - Juin 2024</p>
+    <ul>
+      <li>Surveillance des conditions internes et envoi vers le cloud via MQTT</li>
+      <li>Affichage des données en temps réel avec Node-RED</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Activités</h3>
+    <ul>
+      <li>Membre actif — Club Mécatronique ENICarthage (2022 – Présent)</li>
+      <li>Vice-président — Club Robotique ISET Béja (2020 – 2022)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Langues</h3>
+    <ul>
+      <li>Français</li>
+      <li>Anglais</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Ahmed Baha Eddine LACHHEB — Tous droits réservés</p>
+  </footer>
+</body>
+</html>
