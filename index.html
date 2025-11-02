@@ -89,12 +89,19 @@
       border-radius: 6px;
       font-size: 14px;
       cursor: pointer;
-      margin-left: 10px;
       transition: background-color 0.3s ease;
     }
 
     .cv-button:hover {
       background-color: #003080;
+    }
+
+    /* Flex container pour titre + bouton à droite */
+    .stage-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -122,11 +129,10 @@
   <section>
     <h3>Expérience Professionnelle</h3>
 
-    <p>
-      <button class="cv-button" onclick="window.open('Attestation-I@T.pdf', '_blank')">Voir le rapport</button>
-      <strong>Stage de fin d’études | Innov-Alliance-Technologie</strong>
-      (Fév. 2025 – Juin 2025)
-    </p>
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Stage de fin d’études | Innov-Alliance-Technologie</strong> (Fév. 2025 – Juin 2025)</p>
+      <button class="cv-button" onclick="window.open('Attestation-I@T.pdf', '_blank')">Voir l'attestation</button>
+    </div>
     <ul>
       <li>Optimisation du système de mise à jour firmware d’un servomoteur via BLE</li>
       <li>Développement d’un script Python pour transfert via commandes AT vers ESP32</li>
@@ -135,11 +141,10 @@
     </ul>
     <p><em>Mots-clés :</em> Python, ESP32, BLE, UART, STM32G474VET6, QSPI, IAR EWARM</p>
 
-    <p>
-      <button class="cv-button" onclick="window.open('Attestation-ST.pdf', '_blank')">Voir le rapport</button>
-      <strong>Stage d’été | STMicroelectronics</strong>
-      (Juil. 2024 – Sept. 2024)
-    </p>
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Stage d’été | STMicroelectronics</strong> (Juil. 2024 – Sept. 2024)</p>
+      <button class="cv-button" onclick="window.open('Attestation-ST.pdf', '_blank')">Voir l'attestation</button>
+    </div>
     <ul>
       <li>Développement d’un exemple BSP d’enregistrement audio analogique pour STM32H735G-DK</li>
       <li>Configuration des périphériques SAI et DFSDM</li>
@@ -147,16 +152,35 @@
     </ul>
     <p><em>Mots-clés :</em> STM32H735G-DK, IAR EWARM, SAI, DFSDM, Audio MEMS</p>
 
-    <p>
-      <button class="cv-button" onclick="window.open('Attestation-Iset.pdf', '_blank')">Voir le rapport</button>
-      <strong>Projet de fin d’études | ISET Béja</strong>
-      (Fév. 2022 – Juin 2022)
-    </p>
+  <div class="stage-header">
+  <p style="margin:0;"><strong>Projet de fin d’études | ISET Béja</strong> (Fév. 2022 – Juin 2022)</p>
+  <div style="display: flex; flex-direction: column; gap: 5px; align-items: flex-end;">
+    <button class="cv-button" style="padding:6px 12px; font-size:14px;" onclick="window.open('Attestation-Iset.pdf', '_blank')">Voir l'attestation</button>
+    <button class="cv-button" style="padding:6px 12px; font-size:14px;" onclick="window.open('Agridrone.mp4', '_blank')">Voir la vidéo</button>
+  </div>
+</div>
+
+<ul>
+  <li><strong>AGRIDRONE</strong> – Drone pour la détection d’oranges à l’aide de YOLOv5</li>
+  <li>Assemblage du drone, configuration du contrôleur et entraînement du modèle</li>
+  <li>Gestion de projet avec Jira et GitHub</li>
+</ul>
+ <!-- Nouveau stage CETIME ajouté ici -->
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Stage d’été | CETIME</strong> (Juil. 2024 – Août 2024)</p>
+      <button class="cv-button" onclick="window.open('Attestation-CETIME.pdf', '_blank')">Voir l'attestation</button>
+    </div>
     <ul>
-      <li><strong>AGRIDRONE</strong> – Drone pour la détection d’oranges à l’aide de YOLOv5</li>
-      <li>Assemblage du drone, configuration du contrôleur et entraînement du modèle</li>
-      <li>Gestion de projet avec Jira et GitHub</li>
+      <li>Étude et développement d’un module de mesure de température et d’humidité</li>
+      <li>Utilisation des capteurs DHT22 et communication I2C</li>
+      <li>Implémentation d’un affichage sur écran LCD 16x2</li>
     </ul>
+    <p><em>Mots-clés :</em> STM32F4, I2C, DHT22, LCD, Capteurs, C embarqué</p>
+    
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Stage d’initiation | Valeo</strong> (Juil. 2024 – Août 2024)</p>
+      <button class="cv-button" onclick="window.open('Attestation-Valeo.pdf', '_blank')">Voir l'attestation</button>
+    </div>
   </section>
 
   <section>
@@ -175,13 +199,18 @@
   <section>
     <h3>Projets Académiques</h3>
 
-    <p><strong>Canne intelligente pour aveugle (FreeRTOS)</strong> — Oct. 2024 - Nov. 2024</p>
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Canne intelligente pour aveugle (FreeRTOS)</strong> — Oct. 2024 - Nov. 2024</p>
+    </div>
     <ul>
       <li>Implémentation de la pile FreeRTOS sur STM32F4</li>
       <li>Intégration de capteurs et d’alertes pour l’autonomie des utilisateurs</li>
     </ul>
 
-    <p><strong>Ruche connectée pour apiculteur</strong> — Fév. 2024 - Juin 2024</p>
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Ruche connectée pour apiculteur</strong> — Fév. 2024 - Juin 2024</p>
+      <button class="cv-button" style="padding:6px 12px; font-size:14px;" onclick="window.open('Ruche.mp4', '_blank')">Voir la vidéo</button>
+    </div>
     <ul>
       <li>Surveillance des conditions internes et envoi vers le cloud via MQTT</li>
       <li>Affichage des données en temps réel avec Node-RED</li>
@@ -189,10 +218,25 @@
   </section>
 
   <section>
+    <h3>Certifications</h3>
+
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Certificat Solidworks-CSWA</strong> – 2024</p>
+      <button class="cv-button" onclick="window.open('Certificate_SOLIDWORKS.pdf', '_blank')">Voir le certificat</button>
+    </div>
+
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Certificat de participation en InnovationLab </strong> – 2023</p>
+      <button class="cv-button" onclick="window.open('Certificate_GIZ.pdf', '_blank')">Voir le certificat</button>
+    </div>
+
+  </section>
+
+  <section>
     <h3>Activités</h3>
     <ul>
       <li>Membre actif — Club Mécatronique ENICarthage (2022 – Présent)</li>
-      <li>Vice-président — Club Robotique ISET Béja (2020 – 2022)</li>
+      <li>Vice-président — Club Robotique ISET Béja (2020-2022)</li>
     </ul>
   </section>
 
