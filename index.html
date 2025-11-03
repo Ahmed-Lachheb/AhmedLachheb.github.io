@@ -80,7 +80,6 @@
       color: #555;
     }
 
-    /* Style du bouton PDF */
     .cv-button {
       background-color: #004aad;
       color: white;
@@ -96,12 +95,24 @@
       background-color: #003080;
     }
 
-    /* Flex container pour titre + bouton à droite */
     .stage-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 5px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    /* Style des icônes (logos) */
+    .icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
     }
   </style>
 </head>
@@ -131,7 +142,10 @@
 
     <div class="stage-header">
       <p style="margin:0;"><strong>Stage de fin d’études | Innov-Alliance-Technologie</strong> (Fév. 2025 – Juin 2025)</p>
-      <button class="cv-button" onclick="window.open('Attestation-I@T.pdf', '_blank')">Voir l'attestation</button>
+      <div class="button-group">
+        <button class="cv-button" onclick="window.open('Attestation-I@T.pdf', '_blank')">Voir l'attestation</button>
+        <button class="cv-button" onclick="window.open('Rapport I@T.pdf', '_blank')">Voir le rapport</button>
+      </div>
     </div>
     <ul>
       <li>Optimisation du système de mise à jour firmware d’un servomoteur via BLE</li>
@@ -143,7 +157,10 @@
 
     <div class="stage-header">
       <p style="margin:0;"><strong>Stage d’été | STMicroelectronics</strong> (Juil. 2024 – Sept. 2024)</p>
-      <button class="cv-button" onclick="window.open('Attestation-ST.pdf', '_blank')">Voir l'attestation</button>
+      <div class="button-group">
+        <button class="cv-button" onclick="window.open('Attestation-ST.pdf', '_blank')">Voir l'attestation</button>
+        <button class="cv-button" onclick="window.open('Rapport ST.pdf', '_blank')">Voir le rapport</button>
+      </div>
     </div>
     <ul>
       <li>Développement d’un exemple BSP d’enregistrement audio analogique pour STM32H735G-DK</li>
@@ -152,23 +169,26 @@
     </ul>
     <p><em>Mots-clés :</em> STM32H735G-DK, IAR EWARM, SAI, DFSDM, Audio MEMS</p>
 
-  <div class="stage-header">
-  <p style="margin:0;"><strong>Projet de fin d’études | ISET Béja</strong> (Fév. 2022 – Juin 2022)</p>
-  <div style="display: flex; flex-direction: column; gap: 5px; align-items: flex-end;">
-    <button class="cv-button" style="padding:6px 12px; font-size:14px;" onclick="window.open('Attestation-Iset.pdf', '_blank')">Voir l'attestation</button>
-    <button class="cv-button" onclick="window.open('https://youtube.com/shorts/FPVdGwsUq_4', '_blank')">Voir la vidéo</button>
-  </div>
-</div>
+    <div class="stage-header">
+      <p style="margin:0;"><strong>Projet de fin d’études | ISET Béja</strong> (Fév. 2022 – Juin 2022)</p>
+      <div class="button-group">
+        <button class="cv-button" onclick="window.open('Attestation-Iset.pdf', '_blank')">Voir l'attestation</button>
+        <button class="cv-button" onclick="window.open('https://youtube.com/shorts/FPVdGwsUq_4', '_blank')">Voir la vidéo</button>
+        <button class="cv-button" onclick="window.open('Rapport Agridrone.pdf', '_blank')">Voir le rapport</button>
+      </div>
+    </div>
+    <ul>
+      <li><strong>AGRIDRONE</strong> – Drone pour la détection d’oranges à l’aide de YOLOv5</li>
+      <li>Assemblage du drone, configuration du contrôleur et entraînement du modèle</li>
+      <li>Gestion de projet avec Jira et GitHub</li>
+    </ul>
 
-<ul>
-  <li><strong>AGRIDRONE</strong> – Drone pour la détection d’oranges à l’aide de YOLOv5</li>
-  <li>Assemblage du drone, configuration du contrôleur et entraînement du modèle</li>
-  <li>Gestion de projet avec Jira et GitHub</li>
-</ul>
- <!-- Nouveau stage CETIME ajouté ici -->
     <div class="stage-header">
       <p style="margin:0;"><strong>Stage d’été | CETIME</strong> (Juil. 2024 – Août 2024)</p>
-      <button class="cv-button" onclick="window.open('Attestation-CETIME.pdf', '_blank')">Voir l'attestation</button>
+      <div class="button-group">
+        <button class="cv-button" onclick="window.open('Attestation-CETIME.pdf', '_blank')">Voir l'attestation</button>
+        <button class="cv-button" onclick="window.open('Rapport CETIME.pdf', '_blank')">Voir le rapport</button>
+      </div>
     </div>
     <ul>
       <li>Étude et développement d’un module de mesure de température et d’humidité</li>
@@ -176,7 +196,7 @@
       <li>Implémentation d’un affichage sur écran LCD 16x2</li>
     </ul>
     <p><em>Mots-clés :</em> STM32F4, I2C, DHT22, LCD, Capteurs, C embarqué</p>
-    
+
     <div class="stage-header">
       <p style="margin:0;"><strong>Stage d’initiation | Valeo</strong> (Juil. 2024 – Août 2024)</p>
       <button class="cv-button" onclick="window.open('Attestation-Valeo.pdf', '_blank')">Voir l'attestation</button>
@@ -189,7 +209,10 @@
       <li><strong>Langages :</strong> C, C++, C embarqué, Assembleur, Python</li>
       <li><strong>Cartes :</strong> STM32, ESP32, Arduino, PIC</li>
       <li><strong>Protocoles :</strong> UART, I2C, SPI, I2S, QSPI</li>
-      <li><strong>Outils :</strong> STM32CubeIDE, IAR EWARM, Keil µVision, CubeMX, VSCode, MPLAB</li>
+      <li><strong>Outils :</strong>
+        <img src="A.png" alt="STM32CubeIDE" class="icon"> STM32CubeIDE,
+        IAR EWARM, Keil µVision, CubeMX, VSCode, MPLAB
+      </li>
       <li><strong>IoT :</strong> MQTT, Node-RED</li>
       <li><strong>Gestion de versions :</strong> Git, GitHub</li>
       <li><strong>Scrum :</strong> Jira, Trello</li>
@@ -209,7 +232,10 @@
 
     <div class="stage-header">
       <p style="margin:0;"><strong>Ruche connectée pour apiculteur</strong> — Fév. 2024 - Juin 2024</p>
-      <button class="cv-button" onclick="window.open('https://youtu.be/XMKI2BU0eZM', '_blank')">Voir la vidéo</button>
+      <div class="button-group">
+        <button class="cv-button" onclick="window.open('https://youtu.be/XMKI2BU0eZM', '_blank')">Voir la vidéo</button>
+        <button class="cv-button" onclick="window.open('Rapport Ruche.pdf', '_blank')">Voir le rapport</button>
+      </div>
     </div>
     <ul>
       <li>Surveillance des conditions internes et envoi vers le cloud via MQTT</li>
@@ -229,7 +255,6 @@
       <p style="margin:0;"><strong>Certificat de participation en InnovationLab </strong> – 2023</p>
       <button class="cv-button" onclick="window.open('Certificate_GIZ.pdf', '_blank')">Voir le certificat</button>
     </div>
-
   </section>
 
   <section>
